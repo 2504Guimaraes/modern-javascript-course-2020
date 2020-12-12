@@ -17,3 +17,9 @@ console.log(valores)
      that "valores" always will be a data of the type array. But
      it doesn't affects its internal content.
 */
+
+console.log(valores.pop())
+delete valores[0]
+console.log(valores)
+
+console.log(typeof valores)
