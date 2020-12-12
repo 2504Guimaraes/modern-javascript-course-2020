@@ -9,7 +9,7 @@ console.log(isAtivo)
 isAtivo = 1 // by default 1 represents true value
 console.log(!!isAtivo)
 
-console.log('os elementos representados como verdadeiros:')
+console.log('os elementos naturalmente representados como verdadeiros:')
 console.log(!!3)
 console.log(!!-1)
 console.log(!!' ')
@@ -18,7 +18,7 @@ console.log(!!{})
 console.log(!!Infinity)
 console.log(!!(isAtivo = true))
 
-console.log('os elementos representados como falsos:')
+console.log('os elementos naturalmente representados como falsos:')
 console.log(!!0)
 console.log(!!'')
 console.log(!!null)
