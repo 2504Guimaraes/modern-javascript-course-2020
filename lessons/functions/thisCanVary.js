@@ -53,3 +53,9 @@ document.getElementsByTagName('body')[0].onclick = f1
 // It will return TRUE, because unlike normal functions, in arrow
 // functions the keyword "this" NEVER VARIES... meaning that no matter
 // which it the current function's caller.
+
+/*
+    Addition: "this" in arrow functions will be set through
+    the context where the function is defined. 
+    It's called "lexical this".
+*/
