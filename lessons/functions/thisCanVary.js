@@ -56,6 +56,6 @@ document.getElementsByTagName('body')[0].onclick = f1
 
 /*
     Addition: "this" in arrow functions will be set through
-    the context where the function is defined. 
+    the lexical context where the function is defined. 
     It's called "lexical this".
 */
