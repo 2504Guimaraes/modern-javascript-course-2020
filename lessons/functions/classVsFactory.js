@@ -30,3 +30,18 @@ function fazerPessoa(nome) {
 
 const p2 = fazerPessoa('Nathalia')
 p2.falar()
+
+
+
+
+function Pessoa2(nome) {
+    
+    this.nome = nome
+
+    this.falar = () => {
+        console.log(`Meu nome é ${nome}`)
+    }
+}
+
+const p3 = new Pessoa2('Carlos Magno')
+p3.falar()
