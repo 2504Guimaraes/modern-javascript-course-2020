@@ -33,6 +33,8 @@ p2.falar()
 
 
 
+// As you can notice, constructor functions and 
+// classes are almost the same thing...
 
 function Pessoa2(nome) {
     
