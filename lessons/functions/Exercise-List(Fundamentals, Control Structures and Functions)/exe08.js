@@ -31,3 +31,6 @@ const verDesempenho = lista_de_Pontuacoes => {
 }
 
 console.log(verDesempenho(pontuacoes))
+console.log(verDesempenho([9,8,7,5]))
+console.log(verDesempenho([5,6,5,5]))
+console.log(verDesempenho([5,5,5,5]))
