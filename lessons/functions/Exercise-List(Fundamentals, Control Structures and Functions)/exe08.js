@@ -1,14 +1,33 @@
-const pontuacoes = [6.5, 7, 5.5, 8, 9.5, 9, 4.5, 3, 10, 7]
+const pontuacoes = [6,7,5,8,9,9,4,3,10,7]
 
-function desempenho(lista) {
+const verDesempenho = lista_de_Pontuacoes => {
 
-    let c = 0
+    let i = 0
+    let maiorDesempenho = lista_de_Pontuacoes[0]
+    let menorDesempenho = lista_de_Pontuacoes[0]
+    let qnt_Recordes = []
 
-    while (c < lista.length) 
-    {
-        console.log({index: c, valor: lista[c]})
-        c++
+    while(i < lista_de_Pontuacoes.length) {
+
+        if ( maiorDesempenho < lista_de_Pontuacoes[i]) {
+          maiorDesempenho = lista_de_Pontuacoes[i]
+          qnt_Recordes.push(
+            lista_de_Pontuacoes[i]
+          )
+        }
+
+        if ( menorDesempenho > lista_de_Pontuacoes[i]) {
+          menorDesempenho = lista_de_Pontuacoes[i]
+        }
+
+        i++
     }
+
+    return [
+        {'lista de Records': qnt_Recordes},
+        {'Nº vezes que bateu o próprio record': qnt_Recordes.length},
+        {'pior nota já tirada': menorDesempenho}
+    ]
 }
 
-desempenho(pontuacoes)
+console.log(verDesempenho(pontuacoes))
