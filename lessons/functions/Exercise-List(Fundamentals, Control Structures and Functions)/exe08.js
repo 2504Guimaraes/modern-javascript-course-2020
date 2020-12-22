@@ -6,7 +6,7 @@ const verDesempenho = listaString => {
   let maiorDesempenho = lista_de_Pontuacoes[0]
   let menorDesempenho = lista_de_Pontuacoes[0]
   let qnt_Recordes = []
-  let localMenorDesempenho = 'Não há melhor desempenho'
+  let localMenorDesempenho = 'Não existe pior desempenho nesse cenário.'
 
 
   while(i < lista_de_Pontuacoes.length) {
