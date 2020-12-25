@@ -16,20 +16,11 @@ const arredondar = numero => {
 }
 
 const resultadoAvaliacao = (nota_final, nota) => {
-    
-    if (nota_final < 40) { 
-        return { 
-            arredondamento: `${nota} => ${nota_final}`,
-            nota_final: nota_final, 
-            situacao: 'Reprovado' 
-        } 
-    } 
-    else if (nota_final >= 40) {
-        return { 
-            arredondamento: `${nota} => ${nota_final}`,
-            nota_final: nota_final,  
-            situacao: 'Aprovado' 
-        }
+
+    return { 
+        arredondamento: `${nota} => ${nota_final}`,
+        nota_final: nota_final,  
+        situacao: nota_final >= 40 ? 'Aprovado' : 'Reprovado' 
     }
 }
 
