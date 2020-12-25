@@ -16,7 +16,6 @@ const arredondar = numero => {
 }
 
 const resultadoAvaliacao = (nota_final, nota) => {
-
     return { 
         arredondamento: `${nota} => ${nota_final}`,
         nota_final: nota_final,  
