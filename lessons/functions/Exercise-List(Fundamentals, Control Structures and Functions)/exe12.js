@@ -12,6 +12,15 @@ const fatorialDe = numero => {
     return fatorial
 }
 
+const fatorial = numero => {
+    return numero <= 0 ? 1 : numero * fatorialDe(numero - 1)
+}
+
+console.time()
+console.log(fatorial(5))
+console.log(fatorial(251))
+console.timeEnd()
+
 console.time()
 console.log(fatorialDe(1))
 console.log(fatorialDe(2))
