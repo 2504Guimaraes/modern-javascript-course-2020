@@ -10,3 +10,5 @@ const funcBhaskara = (a, b, c) => {
 console.log(funcBhaskara(3, -5, 12))
 console.log(funcBhaskara(1, 12, -13))
 console.log(funcBhaskara(2, -16, -18))
+console.log(funcBhaskara(2, -1, 8))
+console.log(funcBhaskara(1, 1, 1))
