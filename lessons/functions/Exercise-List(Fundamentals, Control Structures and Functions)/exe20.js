@@ -26,4 +26,5 @@ const fazerSaque = (valorDesejado) => {
 console.log(fazerSaque(100))
 console.log(fazerSaque(10))
 console.log(fazerSaque(18))
-console.log(fazerSaque(39))
+console.log(fazerSaque(15))
+console.log(fazerSaque(12))
