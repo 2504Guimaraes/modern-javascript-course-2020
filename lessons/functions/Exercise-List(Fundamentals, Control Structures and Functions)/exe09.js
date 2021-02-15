@@ -53,6 +53,7 @@ console.log(definirNota(38))
 console.log(definirNota(39))
 console.log(definirNota(56))
 console.log(definirNota(58))
+console.log(definirNota(51))
 console.log(definirNota(99))
 console.log(definirNota(101))
 
