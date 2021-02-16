@@ -1,30 +1,37 @@
-const fazerSaque = (valorDesejado) => {
-    
-    const cedulas = {
-        cem: 100,
-        cinquenta: 50,
-        dez: 10,
-        cinco: 5,
-        um: 1
-    }
+const calcularNumeroCedulas = (valorSacado, listaCedulas, listaCedulasDoSaque) => {
 
-    cedulas_necessarias = []
+    while (valorSacado > 0) {       
+        for (let cedula in listaCedulas) 
+        {
+            if (listaCedulas[cedula] <= valorSacado) {
 
-    while (valorDesejado > 0) {
-        for (let cedula in cedulas) {
-            if (cedulas[cedula] <= valorDesejado) 
-            {
-                cedulas_necessarias.push(cedulas[cedula])
-                valorDesejado -= cedulas[cedula]
+                listaCedulasDoSaque.push(listaCedulas[cedula])
+                valorSacado -= listaCedulas[cedula]
             }
         }
     }
 
-    return cedulas_necessarias
+    return listaCedulasDoSaque
+}
+
+
+
+const fazerSaque = (valor) => {
+
+    const cedulas = { cem: 100, cinquenta: 50, dez: 10, cinco: 5, um: 1 }
+    
+    let cedulas_para_o_saque = []
+
+    const cedulasNecessarias = calcularNumeroCedulas(
+        valor, 
+        cedulas, 
+        cedulas_para_o_saque
+    )
+    
+    return cedulasNecessarias
 }
 
 console.log(fazerSaque(100))
-console.log(fazerSaque(10))
-console.log(fazerSaque(18))
-console.log(fazerSaque(15))
-console.log(fazerSaque(12))
+console.log(fazerSaque(13))
+console.log(fazerSaque(150))
+console.log(fazerSaque(200))
