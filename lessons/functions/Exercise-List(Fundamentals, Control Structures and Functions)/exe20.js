@@ -19,7 +19,6 @@ const calcularNumeroCedulas = (valorSacado, listaCedulas, listaCedulasDoSaque) =
 const fazerSaque = (valor) => {
 
     const cedulas = { cem: 100, cinquenta: 50, dez: 10, cinco: 5, um: 1 }
-    
     let cedulas_para_o_saque = []
 
     const cedulasNecessarias = calcularNumeroCedulas(
