@@ -32,3 +32,15 @@ nums.forEach((value) => {
 })
 
 console.log({ new_one: newArray })
+
+////////////////////////////////////////////////////////////////
+
+const soma10 = elemnt => elemnt + 10
+const triplo = elemnt => elemnt * 3
+const paraDinheiro = elemnt => `R$ ${parseFloat(elemnt).toFixed(2).replace('.',',')}`
+
+resultado = nums.map(soma10)
+            .map(triplo)
+            .map(paraDinheiro)
+             
+console.log(resultado)
