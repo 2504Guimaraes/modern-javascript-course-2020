@@ -7,8 +7,8 @@ const carrinho = [
 
 // Return an array with just the JSON objects's price.
 
-const prices = carrinho.map(elemnt => {
-    const el = JSON.parse(elemnt)
+const prices = carrinho.map(element => {
+    const el = JSON.parse(element)
     return el.preco
 })
 
