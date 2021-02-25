@@ -17,6 +17,11 @@ console.log(test) // It will returns undefined, 'cause unlike Map, forEach
 // just manipulates one element or value directly inside an array, without
 // generating a new array with your specified features.
 
+nums.forEach((element) => {
+    element * 2
+})
+console.log(nums, 'As you can see again, nothing is really altered.')
+
 
 // You would need to do something like that for the same purpose:
 
