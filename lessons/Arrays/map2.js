@@ -7,6 +7,8 @@ const carrinho = [
 
 // Return an array with just the JSON objects's price.
 
+// My approach:
+
 const prices = carrinho.map(element => {
     const el = JSON.parse(element)
     return el.preco
@@ -14,3 +16,12 @@ const prices = carrinho.map(element => {
 
 console.log(prices)
 
+// CODERS's approach:
+
+const paraObjeto = json => JSON.parse(json)
+const apenasPreco = produto => produto.preco
+
+const resultado = carrinho
+    .map(paraObjeto)
+    .map(apenasPreco)
+console.log(resultado)
