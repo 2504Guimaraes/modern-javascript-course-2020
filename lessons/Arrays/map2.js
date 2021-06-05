@@ -13,3 +13,4 @@ const prices = carrinho.map(element => {
 })
 
 console.log(prices)
+
